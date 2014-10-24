@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+require 'emo_pandoc'
+require 'json'
+
+print EmoPandoc.filter(JSON.parse(STDIN.read)).to_json
+
